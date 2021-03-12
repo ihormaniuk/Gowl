@@ -15,6 +15,7 @@ public class AtivityOpenBrovser extends Activity {
         Intent intent = getIntent();
         Uri data = intent.getData();
         String url = data.toString();
+
         if (url.equals("https://uakino.club/")){
             Intent main = new Intent(AtivityOpenBrovser.this, MainActivity.class);
             startActivity(main);
