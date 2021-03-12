@@ -3,7 +3,6 @@ package com.groot.gowl;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -62,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
         nextPage = "https://uakino.club/page/3/";
         bool = "https://uakino.club/";
-
 
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -135,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 Element element = document.select("div[class=main-section-wr with-sidebar coloredgray clearfix]").first();
                 Elements elements = element.select("div.movie-img");
-//                Elements nameSpace = element.select("a.movie-title");
                 Elements nameNotSerial = element.select("div.deck-title");
                 Elements imageElement = elements.select("img");
                 Elements urlElement = elements.select("a");
