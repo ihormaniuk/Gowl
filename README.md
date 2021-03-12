@@ -1,4 +1,5 @@
-# Gowl
+# Gowl              
+![Screenshot](ic_owl_round.png)
 
 ![Screenshot](Screenshot_20210312-161749.png)
 
