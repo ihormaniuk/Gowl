@@ -32,7 +32,7 @@
             android:name=".Activity.SelectActivity_Serials"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode" />
         <activity android:name=".Activity.MultFilmActivity" />
-        <activity android:name=".Activity.AtivityOpenBrovser">
+        <activity android:name=".Activity.ActivityOpenBrowser">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
