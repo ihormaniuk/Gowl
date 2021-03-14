@@ -156,23 +156,23 @@ public class MainActivity extends AppCompatActivity {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                Element element = document.select("div[class=main-section-wr with-sidebar coloredgray clearfix]").first();
-                Elements elements = element.select("div.movie-img");
-                Elements nameSpace = element.select("a.movie-title");
-                Elements imageElement = elements.select("img");
-                Elements urlElement = elements.select("a");
-                int size = elements.size();
-                for (int i = 0;i<size;i++){
-                    Element sesons = elements.get(i);
-                    Element urlSize = urlElement.get(i);
-                    String getUrlPage = urlSize.attr("href");
-                    Element images = imageElement.get(i);
-                    Element nameSpaces = nameSpace.get(i);
-                    String getNameSpaces = nameSpaces.text();
-                    String sesonsString = sesons.text();
-                    String imageElementUrl = images.absUrl("src");
-                    startPage_arrays.add(new StartPage_Arrays(getUrlPage,imageElementUrl,sesonsString,getNameSpaces));
-                }
+                    Element element = document.select("div[class=main-section-wr with-sidebar coloredgray clearfix]").first();
+                    Elements elements = element.select("div.movie-img");
+                    Elements nameSpace = element.select("a.movie-title");
+                    Elements imageElement = elements.select("img");
+                    Elements urlElement = elements.select("a");
+                    int size = elements.size();
+                    for (int i = 0;i<size;i++){
+                        Element sesons = elements.get(i);
+                        Element urlSize = urlElement.get(i);
+                        String getUrlPage = urlSize.attr("href");
+                        Element images = imageElement.get(i);
+                        Element nameSpaces = nameSpace.get(i);
+                        String getNameSpaces = nameSpaces.text();
+                        String sesonsString = sesons.text();
+                        String imageElementUrl = images.absUrl("src");
+                        startPage_arrays.add(new StartPage_Arrays(getUrlPage,imageElementUrl,sesonsString,getNameSpaces));
+                    }
             }
             return null;
         }
